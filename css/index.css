@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
+
+/* Variables */
+:root {
+  --bg-color: rgb(230, 230, 240);
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+/* Global CSS */
+body {
+  background-color: var(--bg-color);
+  color: black;
+}
+header {
+  background-color: #06C;
+  height: 5em;
+}
+.navmenu > li > a {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .9em 5em;
+}
+.navbar-logo {
+  color: black;
+  font-weight: 900;
+  font-size: 2em;
+  transition: .6s;
+}
+.navbar-logo:hover {
+  transform: scale(1.2);
+}
+.navbar-logo > span {
+  color: rgb(206, 206, 220);
+}
+
+.navmenu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  justify-content: space-around;
+  align-items: center;
+}
+.navmenu > li {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.navmenu > li > a {
+  transition: color .5s;
+}
+.navmenu > li > a:hover {
+  color: lightgrey;
+}
+.navmenu > li > a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: lightgrey;
+  transition: width .5s;
+}
+.navmenu > li > a:hover::after {
+  width: 100%;
+}
+
+/* CSS do main! */
+
+
+
+
+/* CSS do footer */
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
